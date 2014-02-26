@@ -51,7 +51,7 @@ public class MainClass {
 				input = userInput.next();
 				input = input.replaceAll("[^0-9]", "").trim();
 				if (input.equals("")) {
-					System.out.println("Invalid option. Enter the number of the option you wish to choose.");
+					System.out.println("Invalid option. Enter the \"number\" of the option you wish to choose.");
 					continue;
 				}
 				answer = Integer.parseInt(input);

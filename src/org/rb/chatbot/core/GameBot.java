@@ -106,7 +106,7 @@ public class GameBot {
 		Boolean shouldRestart = false;
 		String chatTranscript = "";
 		webHandler.sendMessage(ConstantTextStrings.BOT_GOODBYE);
-		webHandler.sendMessage(ConstantTextStrings.BOT_TECH_STUFF);
+		webHandler.sendMessage(ConstantTextStrings.BOT_PUBLICITY);
 		webHandler.sendMessage(ConstantTextStrings.BOT_RESTART_INSTRUCTIONS);
 		chatTranscript = webHandler.getTranscript();
 		int cnt = 0;

@@ -35,7 +35,12 @@ public class ConstantTextStrings {
 	/**
 	 * The goodbye when I'm not around.
 	 */
-	public static final String BOT_GOODBYE = "Thanks for sticking around :) Hope you had fun ! I'll have to disconnect in about 240 seconds. Do leave any feedback if you have any. You can also follow my owner(cheap publicity if you ask me) on twitter - @revanthb3000";
+	public static final String BOT_GOODBYE = "Thanks for sticking around ! Hope you had fun ! Do you have feedback ? ";
+	
+	/**
+	 * My twitter plug in.
+	 */
+	public static final String BOT_PUBLICITY = "You can also follow my owner(cheap publicity if you ask me) on twitter - @revanthb3000 Contact me if you know where to find an actually good story/can work on one.";
 	
 	/**
 	 * Technical Info about the bot !

@@ -57,9 +57,9 @@ public class StoryTree {
 							+ "The kidnappers hear it and are running towards the room. What do you do ?",1,1);
 		storyNodes.add(node);
 		
-		node = new StoryNode("You stand your ground and wait for the kidnappers to come in. They open the door and you pull the trigger. Sadly, you forgot to reload and no bullet is fired. "
-							+ "One of the kidnappers shoots you in the arm. You drop the revolver and clutch your arm. They approach you. One of the kidnappers kicks the revolver away. "
-							+ "The other holds his pistol to your head. BOOM ! In one moment, you've lost your life. You are dead.",3,1);
+		node = new StoryNode("You stand your ground and wait for the kidnappers to come in. They open the door and you pull the trigger. No bullet is fired. The bullet chamber was empty."
+							+ "You spin the cylinder and try again but before you can pull the trigger, you get shot. You drop the revolver and clutch your arm. They approach you. "
+							+ "One of the kidnappers kicks the revolver away. The other holds his pistol to your head. BOOM ! In one moment, you've lost your life. You are dead.",3,1);
 		storyNodes.add(node);
 		
 		node = new StoryNode("You decide to hide near the door. Which side ?",1,1);
@@ -82,7 +82,18 @@ public class StoryTree {
 		node = new StoryNode("You manage to leave the room and lock the door. The kidnappers are trapped. They keep shouting and threaten you but its immaterial. They're the ones that are trapped now !",2,1);
 		storyNodes.add(node);
 		
+		node = new StoryNode("You scream at the top of your lungs. The kidnappers hear you. They approach the window and warn you to not do that again. What do you do now ?", 1, 1);
+		storyNodes.add(node);
+		
+		node = new StoryNode("You try screaming again. One of the kidnappers get ticked off and enter the room. He places his gun to your head and pulls the trigger. You are dead", 3, 1);
+		storyNodes.add(node);
+		
 		storyNodes.get(0).addChild(storyNodes.get(1), "Use a bit of force and try to untie your hands.");
+		storyNodes.get(0).addChild(storyNodes.get(13), "Scream.");
+		
+		storyNodes.get(13).addChild(storyNodes.get(1), "Use a bit of force and try to untie your hands.");
+		storyNodes.get(13).addChild(storyNodes.get(14), "Scream again!");
+
 		
 		storyNodes.get(1).addChild(storyNodes.get(2), "Go to the switchboard.");
 		storyNodes.get(1).addChild(storyNodes.get(4), "Go to the briefcase.");
