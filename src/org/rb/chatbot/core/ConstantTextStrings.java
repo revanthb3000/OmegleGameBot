@@ -43,6 +43,11 @@ public class ConstantTextStrings {
 	public static final String BOT_PUBLICITY = "You can also follow my owner(cheap publicity if you ask me) on twitter - @revanthb3000 Contact me if you know where to find an actually good story/can work on one.";
 	
 	/**
+	 * My Omegle Bot ids
+	 */
+	public static final String BOT_OTHER_SOCIAL_MEDIA =  "Or, you could contact me on other social networks. Look for rbomeglebot on kik, FB or GMail !";
+	
+	/**
 	 * Technical Info about the bot !
 	 */
 	public static final String BOT_TECH_STUFF = "(Technical Info: The bot was written in Java and Selenium was used to control the web browser. Source code's on GitHub)";
